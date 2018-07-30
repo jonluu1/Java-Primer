@@ -1,0 +1,57 @@
+Your goal for this assignment is to create a program that will take in user input
+for 4 or more item along with their price. You will also generate a random six
+digit number as a product ID. All of this information will be stored in a separate
+object called Item. The Item class will have getters and setter for the variables
+that you create as well as an extra method called toString() that will print out
+the ID, object name, and price in a nicely formatted way(examples will be below).
+Back in your main program(DiscountReceipt), you will need three different methods,
+the main(), calcDiscount(), and printReceipt(). The calcDiscount() should return
+a Boolean variable and determine whether or not a discount is applied or not. The
+discount should only occur iff(if and only if) the subtotal is greater than or
+equal to 2000 dollars. The printReceipt() method will format the receipt to make
+it look nice.
+
+Some hints::
+
+You can create a list of objects to store you items into.
+
+This can be done like so:: Item[] shoppingList = new Item[4];
+
+Here is an array of Item called shoppingList. It will only hold objects of the
+type Item, or the class that we created. Using an array to hold the items allow
+us to use a for loop, or even an enhanced for loop, to traverse through the array
+of Item. Use this to your advantage to setup the items as well as retrieve the
+values.
+
+Setting the elements up:: shoppingList[i] = new Item(Object, Price, ID);
+
+Retrieving the elements:: shoppingList[i]._____();
+#The underline contains the name of the getter
+
+
+Example output::
+
+
+Enter an object:: Computer
+What is the price:: 1799.99
+Enter an object:: Monitor
+What is the price:: 399.99
+Enter an object:: Mouse and Keyboard
+What is the price:: 129.99
+Enter an object:: Wireless Headphones
+What is the price:: 299.99
+
+=================================================
+==================R E C E I P T==================
+=================================================
+(192374)Computer. . . . . . . . . . . . . 1799.99
+(934736)Monitor . . . . . . . . . . . . . .399.99
+(234590)Mouse and Keyboard. . . . . . . . .129.99
+(345206)Wireless Headphones . . . . . . . .299.99
+                          Total . . . . . 2629.96
+                 Discount (15%) . . . . . 2235.47
+                    Tax (7.25%) . . . . . .162.07
+                    Total . . . . . . . . 2397.54
+=================================================
+==================R E C E I P T==================
+=================================================
